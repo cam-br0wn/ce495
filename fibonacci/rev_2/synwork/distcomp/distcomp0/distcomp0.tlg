@@ -1,0 +1,15 @@
+@N:: Applying property .distcompmodetop with value 1 on module fibonacci in library work
+@N:: Applying property .distcompnoprune with value 1 on module fibonacci in library work
+@N:: Applying property .noprune with value 1 on module fibonacci in library work
+Selecting top level module fibonacci
+@N: CG364 :"/home/ckb4640/ce495/fibonacci/fibonacci.sv":1:7:1:15|Synthesizing module fibonacci in library work.
+Running optimization stage 1 on fibonacci .......
+@W: CL169 :"/home/ckb4640/ce495/fibonacci/fibonacci.sv":15:2:15:10|Pruning unused register state[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"/home/ckb4640/ce495/fibonacci/fibonacci.sv":15:2:15:10|Pruning register bits 15 to 1 of dout[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Running optimization stage 2 on fibonacci .......
+@N: CL159 :"/home/ckb4640/ce495/fibonacci/fibonacci.sv":5:14:5:18|Input start is unused.
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/ckb4640/ce495/fibonacci/rev_2/synwork//distcomp/distcomp0/distcomp0.rt.csv
+

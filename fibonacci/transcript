@@ -1,0 +1,868 @@
+# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-425.3.1.el8.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:11:14 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:11:14 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:11:14 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:11:15 on Jan 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:11:15 on Jan 11,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:     8, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    34, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   233, SHOULD BE: 12
+# @ 295: Simulation completed.
+# Total simulation cycle count: 29
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 295 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:11:26 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:11:26 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:11:26 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:11:26 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+run -all
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:     8, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    34, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   233, SHOULD BE: 12
+# @ 295: Simulation completed.
+# Total simulation cycle count: 29
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 295 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:12:37 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:12:37 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:12:37 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:12:37 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:12:38 on Jan 11,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:12:38 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    13, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    55, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   377, SHOULD BE: 12
+# @ 325: Simulation completed.
+# Total simulation cycle count: 32
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 325 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:14:34 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vlog-2182) 'next_count' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:14:34 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:14:34 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:14:34 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vopt-2182) 'next_count' might be read before written in always_comb or always @* block.
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+run -all
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    13, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    55, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   377, SHOULD BE: 12
+# @ 325: Simulation completed.
+# Total simulation cycle count: 32
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 325 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:15:09 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vlog-2182) 'next_count' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:15:10 on Jan 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:15:10 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:15:10 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:15:10 on Jan 11,2023, Elapsed time: 0:02:32
+# Errors: 0, Warnings: 1
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:15:10 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vopt-2182) 'next_count' might be read before written in always_comb or always @* block.
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:     8, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    34, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   233, SHOULD BE: 12
+# @ 295: Simulation completed.
+# Total simulation cycle count: 29
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 295 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:16:42 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vlog-2182) 'next_count' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:16:42 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:16:42 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:16:42 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:16:42 on Jan 11,2023, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 1
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:16:42 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vopt-2182) 'next_count' might be read before written in always_comb or always @* block.
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    13, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    55, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   377, SHOULD BE: 12
+# @ 325: Simulation completed.
+# Total simulation cycle count: 32
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 325 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:16:58 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vlog-2182) 'next_count' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:16:58 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:16:58 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:16:58 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+run -all
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    13, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    55, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   377, SHOULD BE: 12
+# @ 325: Simulation completed.
+# Total simulation cycle count: 32
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 325 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:18:39 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vlog-2182) 'next_count' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:18:39 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:18:39 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:18:39 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/ckb4640/ce495/fibonacci/fibonacci.sv(42): (vopt-2182) 'next_count' might be read before written in always_comb or always @* block.
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+run -all
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    21, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    89, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   610, SHOULD BE: 12
+# @ 355: Simulation completed.
+# Total simulation cycle count: 35
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 355 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+# Causality operation skipped due to absence of debug database file
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:22:16 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:22:16 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:22:16 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:22:16 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:22:16 on Jan 11,2023, Elapsed time: 0:05:34
+# Errors: 0, Warnings: 1
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:22:16 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:24:54 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:24:54 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:24:54 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:24:54 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:24:57 on Jan 11,2023, Elapsed time: 0:02:41
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:24:57 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:26:42 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:26:42 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:26:42 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:26:42 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:26:42 on Jan 11,2023, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:26:42 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+run -all
+# @ 0: Beginning simulation...
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:28:59 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:28:59 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:28:59 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:28:59 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:28:59 on Jan 11,2023, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:28:59 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:     x, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:     x, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:     x, SHOULD BE: 12
+# @ 325: Simulation completed.
+# Total simulation cycle count: 32
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 325 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:31:23 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:31:23 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:31:23 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:31:23 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:31:24 on Jan 11,2023, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:31:24 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:41:15 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# ** Error: (vlog-13069) /home/ckb4640/ce495/fibonacci/fibonacci.sv(29): near "val_b": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 21:41:15 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./fibonacci_sim.do line 6
+# /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -work work "/home/ckb4640/ce495/fibonacci/fibonacci.sv""
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:41:28 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:41:28 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:41:28 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:41:28 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:41:28 on Jan 11,2023, Elapsed time: 0:10:04
+# Errors: 1, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:41:28 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:42:48 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:42:48 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:42:48 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:42:48 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:42:49 on Jan 11,2023, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:42:49 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:     x, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:     x, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:     x, SHOULD BE: 12
+# @ 355: Simulation completed.
+# Total simulation cycle count: 35
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 355 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:50:47 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:50:47 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:50:47 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:50:47 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:50:47 on Jan 11,2023, Elapsed time: 0:07:58
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:50:47 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    13, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    55, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   377, SHOULD BE: 12
+# @ 325: Simulation completed.
+# Total simulation cycle count: 32
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 325 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:52:30 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:52:30 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:52:30 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:52:30 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:52:30 on Jan 11,2023, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:52:30 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# INCORRECT RESULT:    34, SHOULD BE: 5
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:   144, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# INCORRECT RESULT:   987, SHOULD BE: 12
+# @ 385: Simulation completed.
+# Total simulation cycle count: 38
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 385 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:52:58 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:52:58 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:52:58 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:52:58 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:52:58 on Jan 11,2023, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:52:58 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "fibonacci(fast)".
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# CORRECT RESULT:     5, GOOD JOB!
+# -----------------------------------------
+# Input:     8
+# INCORRECT RESULT:    21, SHOULD BE: 8
+# -----------------------------------------
+# Input:    12
+# CORRECT RESULT:   144, GOOD JOB!
+# @ 265: Simulation completed.
+# Total simulation cycle count: 26
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 265 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+do fibonacci_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:53:32 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci.sv 
+# -- Compiling module fibonacci
+# 
+# Top level modules:
+# 	fibonacci
+# End time: 21:53:32 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 21:53:32 on Jan 11,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv 
+# -- Compiling module fibonacci_tb
+# 
+# Top level modules:
+# 	fibonacci_tb
+# End time: 21:53:32 on Jan 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:53:34 on Jan 11,2023, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.fibonacci_tb -wlf fibonacci.wlf 
+# Start time: 21:53:34 on Jan 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.fibonacci_tb(fast)
+# Loading work.fibonacci(fast)
+# @ 0: Beginning simulation...
+# -----------------------------------------
+# Input:     5
+# CORRECT RESULT:     5, GOOD JOB!
+# -----------------------------------------
+# Input:     6
+# CORRECT RESULT:     8, GOOD JOB!
+# -----------------------------------------
+# Input:    12
+# CORRECT RESULT:   144, GOOD JOB!
+# @ 245: Simulation completed.
+# Total simulation cycle count: 24
+# ** Note: $stop    : /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv(113)
+#    Time: 245 ns  Iteration: 0  Instance: /fibonacci_tb
+# Break in Module fibonacci_tb at /home/ckb4640/ce495/fibonacci/fibonacci_tb.sv line 113
+# Break key hit
+# End time: 00:10:37 on Jan 12,2023, Elapsed time: 2:17:03
+# Errors: 0, Warnings: 0

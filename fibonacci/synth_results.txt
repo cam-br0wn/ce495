@@ -1,0 +1,16 @@
+Cam Brown
+Jan 11, 2022
+
+-- SYNTHESIS REPORT --
+
+cycle count:    24
+LUTs:           31
+I/O Pins:       36
+DSP Blocks:     0 (15)
+Non I/O regs:   39
+I/O regs:       0
+Memory bits:    0
+
+req freq:       501.9 MHz
+est freq:       426.6 MHz
+slack:          -0.352
