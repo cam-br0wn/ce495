@@ -80,8 +80,8 @@ always_comb begin
         s2: begin
             z_din = sum;
             z_addr = 32($unsigned(i) * VECTOR_SIZE) + $unsigned(j);
-            z_wr_en = (k_c == 12'h3f) ? '1 : '0;
-            if (k_c == 12'h3f && j_c == 6'h3f) begin
+            z_wr_en = (k_c == 6'h3f) ? '1 : '0;
+            if (k_c == 6'h3f && j_c == 6'h3f) begin
                 i_c = i + 'b1;
                 j_c = j + 'b1;
             end elsif (k_c == 6'h3f) begin
