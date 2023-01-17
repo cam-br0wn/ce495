@@ -55,7 +55,7 @@ always_comb begin
     done_c = done;
 
     case (state)
-        // init state
+        // idle state
         s0: begin
            i_c = '0;
            if (start == 1'b1) begin
@@ -64,7 +64,7 @@ always_comb begin
                sum_c = 1'b0;
            end
         end
-        // start new row of X, col of Y
+        // check for new cell entry
         s1: begin
             if ($unsigned(i) < $unsigned(VECTOR_SIZE)) begin
                 x_addr = $unsigned(i) * VECTOR_SIZE + $unsigned(k);
@@ -76,19 +76,19 @@ always_comb begin
                 sum_c = 32'b0;
             end
         end
+        // write to Z if done with computation
         s2: begin
             z_din = sum;
-            z_addr = 32($unsigned(i) * VECTOR_SIZE) + $unsigned(j)
+            z_addr = 32($unsigned(i) * VECTOR_SIZE) + $unsigned(j);
             z_wr_en = (k_c == 12'h3f) ? '1 : '0;
             if (k_c == 12'h3f && j_c == 6'h3f) begin
                 i_c = i + 'b1;
                 j_c = j + 'b1;
-                z_wr_en = 'b1;
             end elsif (k_c == 6'h3f) begin
                 j_c = j + 'b1;
-                z_wr_en = 'b1;
             end
             k_c = k + 'b1;
+            sum_c = sum + ($signed(y_dout) * $signed(x_dout));
             state_c = s1;
         end
         default: begin
