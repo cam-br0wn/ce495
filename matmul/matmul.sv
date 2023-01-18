@@ -1,8 +1,8 @@
 module matmul
 #(
     parameter DATA_WIDTH = 32,
-    parameter ADDR_WIDTH = 12,
-    paramter VECTOR_SIZE = 64)
+    parameter ADDR_WIDTH = 6,
+    parameter VECTOR_SIZE = 8)
 
 (
     input logic clock,
@@ -79,12 +79,12 @@ always_comb begin
         // write to Z if done with computation
         s2: begin
             z_din = sum;
-            z_addr = 32($unsigned(i) * VECTOR_SIZE) + $unsigned(j);
-            z_wr_en = (k_c == 6'h3f) ? '1 : '0;
-            if (k_c == 6'h3f && j_c == 6'h3f) begin
+            z_addr = ($unsigned(i) * VECTOR_SIZE) + $unsigned(j);
+            z_wr_en = (k_c == 3'h7) ? '1 : '0;
+            if (k_c == 3'h7 && j_c == 3'h7) begin
                 i_c = i + 'b1;
                 j_c = j + 'b1;
-            end elsif (k_c == 6'h3f) begin
+            end else if (k_c == 3'h7) begin
                 j_c = j + 'b1;
             end
             k_c = k + 'b1;

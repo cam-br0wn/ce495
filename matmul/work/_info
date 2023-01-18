@@ -1,0 +1,145 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.01, Jan 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ckb4640/ce495/matmul
+T_opt
+Z1 !s110 1674019639
+VG]1zhF^1`:dBD9VPP[N`72
+04 9 4 work matmul_tb fast 0
+=2-b49691574b56-63c78337-aa794-335619
+o-quiet -auto_acc_if_foreign -work work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2020.1;71
+vbram
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 4HzN5J>jGfLh=OTT8<KM33
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<^R6Kh;Vn7KFl1Go29in02
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1673498886
+8/home/ckb4640/ce495/matmul/bram.sv
+F/home/ckb4640/ce495/matmul/bram.sv
+!i122 6
+L0 1 25
+Z6 OL;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1674019639.000000
+!s107 /home/ckb4640/ce495/matmul/bram.sv|
+!s90 -reportprogress|300|-work|work|/home/ckb4640/ce495/matmul/bram.sv|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vbram_block
+R3
+R1
+!i10b 1
+!s100 @NETeBlN7c5H:zZFo4e8G0
+R4
+IaO9=:2iX74T81oC0mVGjO0
+R5
+S1
+R0
+w1673498913
+8/home/ckb4640/ce495/matmul/bram_block.sv
+F/home/ckb4640/ce495/matmul/bram_block.sv
+!i122 7
+L0 2 43
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/ckb4640/ce495/matmul/bram_block.sv|
+!s90 -reportprogress|300|-work|work|/home/ckb4640/ce495/matmul/bram_block.sv|
+!i113 0
+R8
+R2
+vmatmul
+R3
+R1
+!i10b 1
+!s100 7lUOGd6c<;8WMA3LDh<@z3
+R4
+Ib526f1nDGN86a]W5CQRGj0
+R5
+S1
+R0
+w1674019557
+8/home/ckb4640/ce495/matmul/matmul.sv
+F/home/ckb4640/ce495/matmul/matmul.sv
+!i122 5
+L0 1 110
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/ckb4640/ce495/matmul/matmul.sv|
+!s90 -reportprogress|300|-work|work|/home/ckb4640/ce495/matmul/matmul.sv|
+!i113 0
+R8
+R2
+vmatmul_tb
+R3
+R1
+!i10b 1
+!s100 aKhRSHLD:4@lQejW7[j;l1
+R4
+I[kTZni^>Ln8ob=6TdFBU<2
+R5
+S1
+R0
+w1674019607
+8/home/ckb4640/ce495/matmul/matmul_tb.sv
+F/home/ckb4640/ce495/matmul/matmul_tb.sv
+!i122 9
+L0 3 155
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/ckb4640/ce495/matmul/matmul_tb.sv|
+!s90 -reportprogress|300|-work|work|/home/ckb4640/ce495/matmul/matmul_tb.sv|
+!i113 0
+R8
+R2
+vmatmul_top
+R3
+R1
+!i10b 1
+!s100 dc416SSRd0nPGgj621hZo0
+R4
+I1?8RX6<M2mYfNC^_>S@1I0
+R5
+S1
+R0
+w1674017800
+8/home/ckb4640/ce495/matmul/matmul_top.sv
+F/home/ckb4640/ce495/matmul/matmul_top.sv
+!i122 8
+L0 1 87
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/ckb4640/ce495/matmul/matmul_top.sv|
+!s90 -reportprogress|300|-work|work|/home/ckb4640/ce495/matmul/matmul_top.sv|
+!i113 0
+R8
+R2

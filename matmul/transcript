@@ -1,0 +1,198 @@
+# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-425.3.1.el8.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim_matmul.do
+# -9
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Copying /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:22:21 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul.sv 
+# -- Compiling module matmul
+# ** Error: (vlog-13069) /home/ckb4640/ce495/matmul/matmul.sv(5): near "VECTOR_SIZE": syntax error, unexpected IDENTIFIER, expecting ')'.
+# End time: 23:22:21 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim_matmul.do line 6
+# /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -work work "/home/ckb4640/ce495/matmul/matmul.sv""
+do sim_matmul.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:23:17 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul.sv 
+# -- Compiling module matmul
+# ** Error: (vlog-13069) /home/ckb4640/ce495/matmul/matmul.sv(87): near "begin": syntax error, unexpected begin, expecting ';'.
+# ** Error: (vlog-13069) /home/ckb4640/ce495/matmul/matmul.sv(90): near "=": syntax error, unexpected '=', expecting ++ or --.
+# ** Error: (vlog-13069) /home/ckb4640/ce495/matmul/matmul.sv(94): near ":": syntax error, unexpected ':', expecting IDENTIFIER or disable or clock or "SystemVerilog keyword 'clocking'".
+# ** Error: /home/ckb4640/ce495/matmul/matmul.sv(96): (vlog-13205) Syntax error found in the scope following 'z_wr_en'. Is there a missing '::'?
+# End time: 23:23:17 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim_matmul.do line 6
+# /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -work work "/home/ckb4640/ce495/matmul/matmul.sv""
+do sim_matmul.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:25:18 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul.sv 
+# -- Compiling module matmul
+# ** Error: (vlog-13069) /home/ckb4640/ce495/matmul/matmul.sv(87): near "else": syntax error, unexpected else.
+# End time: 23:25:18 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./sim_matmul.do line 6
+# /vol/mentor/modelsim-2020.1/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -work work "/home/ckb4640/ce495/matmul/matmul.sv""
+do sim_matmul.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:26:15 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul.sv 
+# -- Compiling module matmul
+# 
+# Top level modules:
+# 	matmul
+# End time: 23:26:15 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:26:15 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/bram.sv 
+# -- Compiling module bram
+# 
+# Top level modules:
+# 	bram
+# End time: 23:26:15 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:26:15 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/bram_block.sv 
+# -- Compiling module bram_block
+# 
+# Top level modules:
+# 	bram_block
+# End time: 23:26:15 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:26:15 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul_top.sv 
+# -- Compiling module matmul_top
+# 
+# Top level modules:
+# 	matmul_top
+# End time: 23:26:15 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:26:15 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul_tb.sv 
+# -- Compiling module matmul_tb
+# 
+# Top level modules:
+# 	matmul_tb
+# End time: 23:26:15 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.matmul_tb -wlf matmul.wlf 
+# Start time: 23:26:15 on Jan 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/ckb4640/ce495/matmul/matmul_tb.sv(36): Module 'vectorsum_top' is not defined.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim_matmul.do PAUSED at line 13
+do sim_matmul.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:27:19 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul.sv 
+# -- Compiling module matmul
+# 
+# Top level modules:
+# 	matmul
+# End time: 23:27:19 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:27:19 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/bram.sv 
+# -- Compiling module bram
+# 
+# Top level modules:
+# 	bram
+# End time: 23:27:19 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:27:19 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/bram_block.sv 
+# -- Compiling module bram_block
+# 
+# Top level modules:
+# 	bram_block
+# End time: 23:27:19 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:27:19 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul_top.sv 
+# -- Compiling module matmul_top
+# 
+# Top level modules:
+# 	matmul_top
+# End time: 23:27:19 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 23:27:19 on Jan 17,2023
+# vlog -reportprogress 300 -work work /home/ckb4640/ce495/matmul/matmul_tb.sv 
+# -- Compiling module matmul_tb
+# 
+# Top level modules:
+# 	matmul_tb
+# End time: 23:27:19 on Jan 17,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.matmul_tb -wlf matmul.wlf 
+# Start time: 23:26:15 on Jan 17,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "matmul(fast)".
+# Loading sv_std.std
+# Loading work.matmul_tb(fast)
+# Loading work.matmul_top(fast)
+# Loading work.matmul(fast)
+# Loading work.bram(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (1) for port 'x_addr'. The port definition is at: /home/ckb4640/ce495/matmul/matmul.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /matmul_tb/mat/matmul_inst File: /home/ckb4640/ce495/matmul/matmul_top.sv Line: 37
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (1) for port 'y_addr'. The port definition is at: /home/ckb4640/ce495/matmul/matmul.sv(17).
+#    Time: 0 ns  Iteration: 0  Instance: /matmul_tb/mat/matmul_inst File: /home/ckb4640/ce495/matmul/matmul_top.sv Line: 37
+# @ 20: Loading file y.txt...
+# @ 20: Loading file x.txt...
+# @ 675: Beginning simulation...
