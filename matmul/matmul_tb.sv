@@ -2,12 +2,17 @@
 
 module matmul_tb ();
 
+// localparam string X_NAME = "id8.txt";
+// localparam string Y_NAME = "twos8.txt";
+// localparam string Z_NAME = "twos8.txt";
 localparam string X_NAME = "x.txt";
 localparam string Y_NAME = "y.txt";
 localparam string Z_NAME = "z.txt";
 localparam DATA_WIDTH = 32;
 localparam ADDR_WIDTH = 6;
 localparam VECTOR_SIZE = 8;
+// localparam ADDR_WIDTH = 4;
+// localparam VECTOR_SIZE = 4;
 localparam CLOCK_PERIOD = 10;
 
 logic clock = 1'b0;
@@ -44,7 +49,7 @@ matmul_top #(
     .y_wr_addr(y_wr_addr),
     .y_wr_en(y_wr_en),
     .y_din(y_din),
-    .z_rd_addr(z_rd_addr),
+    .z_addr(z_rd_addr),
     .z_dout(z_dout)
 );
 

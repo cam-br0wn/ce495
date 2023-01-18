@@ -2,7 +2,10 @@ module matmul
 #(
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 6,
-    parameter VECTOR_SIZE = 8)
+    parameter VECTOR_SIZE = 8
+    // parameter ADDR_WIDTH = 4,
+    // parameter VECTOR_SIZE = 4
+)
 
 (
     input logic clock,
@@ -23,7 +26,8 @@ module matmul
 
 typedef enum logic [1:0] {s0, s1, s2} state_t;
 state_t state, state_c;
-logic [ADDR_WIDTH/2-1:0] i, i_c, j, j_c, k, k_c;
+logic [ADDR_WIDTH/2-1:0] j, j_c;
+logic [ADDR_WIDTH/2:0] k, k_c, i, i_c;
 logic [DATA_WIDTH-1:0] sum, sum_c;
 logic done_c;
 
@@ -31,22 +35,26 @@ always_ff @(posedge clock or posedge reset) begin
     if (reset) begin
         state <= s0;
         i <= '0;
+        j <= '0;
+        k <= '0;
         done <= 'b0;
         sum <= 'b0;
     end else begin
         state <= state_c;
         i <= i_c;
+        j <= j_c;
+        k <= k_c;
         done <= done_c;
         sum <= sum_c;
     end
 end
 
 always_comb begin
-    z_din = 'b0;
-    z_wr_en = 'b0;
-    z_addr = 'b0;
-    x_addr = 'b0;
-    y_addr = 'b0;
+    z_din = (sum + ($unsigned(y_dout) * $unsigned(x_dout)));
+    z_wr_en = (k == 4'h7 && state == s2) ? '1 : '0;
+    z_addr = ($unsigned(i) * $unsigned(VECTOR_SIZE)) + $unsigned(j);
+    x_addr = ($unsigned(i_c) * $unsigned(VECTOR_SIZE)) + $unsigned(k_c);
+    y_addr = ($unsigned(k_c) * $unsigned(VECTOR_SIZE)) + $unsigned(j_c);
     state_c = state;
     i_c = i;
     j_c = j;
@@ -58,6 +66,8 @@ always_comb begin
         // idle state
         s0: begin
            i_c = '0;
+           j_c = '0;
+           k_c = '0;
            if (start == 1'b1) begin
                state_c = s1;
                done_c = 1'b0;
@@ -67,8 +77,6 @@ always_comb begin
         // check for new cell entry
         s1: begin
             if ($unsigned(i) < $unsigned(VECTOR_SIZE)) begin
-                x_addr = $unsigned(i) * VECTOR_SIZE + $unsigned(k);
-                y_addr = $unsigned(k) * VECTOR_SIZE + $unsigned(j);
                 state_c = s2;
             end else begin
                 done_c = 1'b1;
@@ -78,17 +86,15 @@ always_comb begin
         end
         // write to Z if done with computation
         s2: begin
-            z_din = sum;
-            z_addr = ($unsigned(i) * VECTOR_SIZE) + $unsigned(j);
-            z_wr_en = (k_c == 3'h7) ? '1 : '0;
-            if (k_c == 3'h7 && j_c == 3'h7) begin
+            // z_din = sum;
+            sum_c = (k > 4'h7) ? 32'b0 : (sum + ($unsigned(y_dout) * $unsigned(x_dout)));
+            if (k == 4'h7 && j == 3'h7) begin
                 i_c = i + 'b1;
                 j_c = j + 'b1;
-            end else if (k_c == 3'h7) begin
+            end else if (k == 4'h7) begin
                 j_c = j + 'b1;
             end
-            k_c = k + 'b1;
-            sum_c = sum + ($signed(y_dout) * $signed(x_dout));
+            k_c = (k > 4'h7) ? 'b0 : k + 'b1;
             state_c = s1;
         end
         default: begin

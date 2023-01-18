@@ -1,7 +1,11 @@
 module matmul_top
-#(  parameter DATA_WIDTH = 32,
+#(
+    parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 6,
-    parameter VECTOR_SIZE = 8)
+    parameter VECTOR_SIZE = 8
+    // parameter ADDR_WIDTH = 4,
+    // parameter VECTOR_SIZE = 4
+)
 (
     input logic                     clock,
     input logic                     reset,
@@ -17,14 +21,14 @@ module matmul_top
     input logic                     y_wr_en,
     // Z ports
     output logic [DATA_WIDTH-1:0]   z_dout,
-    input logic [ADDR_WIDTH-1:0]    z_rd_addr
+    input logic [ADDR_WIDTH-1:0]    z_addr
 );
 
 logic [DATA_WIDTH-1:0]  x_dout;
-logic [ADDR_WIDTH-1:0]  x_rd_addr;
+logic [ADDR_WIDTH-1:0]  x_addr;
 
 logic [DATA_WIDTH-1:0]  y_dout;
-logic [ADDR_WIDTH-1:0]  y_rd_addr;
+logic [ADDR_WIDTH-1:0]  y_addr;
 
 logic [DATA_WIDTH-1:0]  z_din;
 logic [ADDR_WIDTH-1:0]  z_wr_addr;
@@ -53,7 +57,7 @@ bram #(
     .BRAM_ADDR_WIDTH(ADDR_WIDTH)
 ) x_inst (
     .clock(clock),
-    .rd_addr(x_rd_addr),
+    .rd_addr(x_addr),
     .wr_addr(x_wr_addr),
     .wr_en(x_wr_en),
     .dout(x_dout),
@@ -65,7 +69,7 @@ bram #(
     .BRAM_ADDR_WIDTH(ADDR_WIDTH)
 ) y_inst (
     .clock(clock),
-    .rd_addr(y_rd_addr),
+    .rd_addr(y_addr),
     .wr_addr(y_wr_addr),
     .wr_en(y_wr_en),
     .dout(y_dout),
@@ -77,7 +81,7 @@ bram #(
     .BRAM_ADDR_WIDTH(ADDR_WIDTH)
 ) z_inst (
     .clock(clock),
-    .rd_addr(z_rd_addr),
+    .rd_addr(z_addr),
     .wr_addr(z_wr_addr),
     .wr_en(z_wr_en),
     .dout(z_dout),
