@@ -1,0 +1,2984 @@
+# //  Questa Sim
+# //  Version 2019.3_2 linux Sep 24 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Warning: License feature 'msimviewer' will expire in 4 days.
+# Project file /home/ckb4640/ce495/motion_detect/motion_detect.mpf was not found.
+# Unable to open project.
+pwd
+# /home/ckb4640/ce_495/udp/sim
+do udp_sim.do
+# -9
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Copying /vol/mentor/questa_sim-2019.3_2/questasim/linux/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:42:21 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:42:22 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:42:22 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# ** Error: ../sv/fifo_ctrl.sv(57): (vlog-13282) 'data_fifo' already declared in this scope.
+# End time: 01:42:22 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 8
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/fifo_ctrl.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:43:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:43:01 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:43:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:43:01 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:43:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: ../sv/parse_udp.sv(18): (vlog-2900) The localparam 'PACKET_HEADER_BYTES' is declared without a default value.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(18): near "40": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
+# ** Error: ../sv/parse_udp.sv(68): (vlog-2730) Undefined variable: 'idle'.
+# ** Error: ../sv/parse_udp.sv(86): (vlog-2730) Undefined variable: 'idle'.
+# ** Error: ../sv/parse_udp.sv(88): (vlog-2730) Undefined variable: 'packet_header'.
+# ** Error: ../sv/parse_udp.sv(90): (vlog-2730) Undefined variable: 'packet_header'.
+# ** Error: ../sv/parse_udp.sv(93): (vlog-2730) Undefined variable: 'udp_length'.
+# ** Error: ../sv/parse_udp.sv(101): (vlog-2730) Undefined variable: 'udp_checksum'.
+# ** Error: ../sv/parse_udp.sv(103): (vlog-2730) Undefined variable: 'UDP_CHECKSUM_BYTES'.
+# ** Error: ../sv/parse_udp.sv(104): (vlog-2730) Undefined variable: 'udp_data'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(106): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ',' or '}'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(111): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ',' or '}'.
+# ** Error: ../sv/parse_udp.sv(114): (vlog-2730) Undefined variable: 'udp_data'.
+# ** Error: ../sv/parse_udp.sv(118): (vlog-2730) Undefined variable: 'validate_checksum'.
+# ** Error: ../sv/parse_udp.sv(128): (vlog-2730) Undefined variable: 'validate_checksum'.
+# ** Error: ../sv/parse_udp.sv(135): (vlog-2730) Undefined variable: 'output_data'.
+# ** Error: ../sv/parse_udp.sv(139): (vlog-2730) Undefined variable: 'output_data'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(150): near "end": syntax error, unexpected end.
+# End time: 01:43:01 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:44:13 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:44:13 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:44:13 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:44:13 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:44:13 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: ../sv/parse_udp.sv(18): (vlog-2900) The localparam 'PACKET_HEADER_BYTES' is declared without a default value.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(18): near "40": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
+# ** Error: ../sv/parse_udp.sv(19): (vlog-2900) The localparam 'UDP_CHECKSUM_BYTES' is declared without a default value.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(19): near "2": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
+# ** Error: ../sv/parse_udp.sv(93): (vlog-2730) Undefined variable: 'udp_length'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(106): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ',' or '}'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(111): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ',' or '}'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(150): near "end": syntax error, unexpected end.
+# End time: 01:44:13 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:44:27 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:44:28 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:44:28 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:44:28 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:44:28 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: ../sv/parse_udp.sv(93): (vlog-2730) Undefined variable: 'udp_length'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(106): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ',' or '}'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(111): near "'0": syntax error, unexpected UNSIZED_BIT, expecting ',' or '}'.
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(150): near "end": syntax error, unexpected end.
+# End time: 01:44:28 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:45:13 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:45:13 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:45:13 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:45:13 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:45:13 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(150): near "end": syntax error, unexpected end.
+# End time: 01:45:13 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:46:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:46:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:46:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:46:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:46:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:46:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:46:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:46:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:46:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# ** Error: (vlog-13069) ../sv/udp_tb.sv(5): near "localparam": syntax error, unexpected localparam.
+# End time: 01:46:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 11
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/udp_tb.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:48:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:48:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:48:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:48:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:48:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: ../sv/udp_tb.sv(35): Module 'udp_top' is not defined.
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:46 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:48:46 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:46 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:48:46 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:46 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:48:46 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:46 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:48:46 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:48:46 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:48:46 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): ../sv/udp_tb.sv(154): (vopt-7063) Failed to find 'TXT_OUT_NAME' in hierarchical name 'TXT_OUT_NAME'.
+#         Region: udp_tb
+# ** Error (suppressible): ../sv/udp_tb.sv(157): (vopt-7063) Failed to find 'TXT_CMP_NAME' in hierarchical name 'TXT_CMP_NAME'.
+#         Region: udp_tb
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:49:52 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:49:52 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:49:52 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:49:52 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:49:52 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:49:52 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:49:52 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:49:52 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:49:52 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:49:52 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): ../sv/udp_tb.sv(35): (vopt-2912) Port 'clock' not found in module 'udp_top_level' (1st connection).
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:50:50 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:50:50 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:50:50 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:50:50 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:50:50 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:50:50 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:50:50 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:50:50 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:50:50 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:50:50 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# Loading work.fifo_ctrl(fast__1)
+# Loading work.fifo(fast__2)
+# Loading work.fifo(fast__3)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (8) for port 'in_din'. The port definition is at: ../sv/udp_top_level.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst File: ../sv/udp_tb.sv Line: 35
+# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (8) for port 'out_dout'. The port definition is at: ../sv/udp_top_level.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst File: ../sv/udp_tb.sv Line: 35
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'din'. The port definition is at: ../sv/fifo_ctrl.sv(12).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(19).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: ../sv/parse_udp.sv(11).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser File: ../sv/udp_top_level.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (24) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(19).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo File: ../sv/udp_top_level.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 32
+# ** Error (suppressible): (vsim-3839) Variable '/udp_tb/in_full', driven via a port connection, is multiply driven. See ../sv/udp_tb.sv(35).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb File: ../sv/udp_tb.sv Line: 22
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:52:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:52:01 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:52:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:52:01 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:52:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:52:01 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:52:01 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:52:02 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:52:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:52:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# Loading work.fifo_ctrl(fast__1)
+# Loading work.fifo(fast__2)
+# Loading work.fifo(fast__3)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(19).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: ../sv/parse_udp.sv(11).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser File: ../sv/udp_top_level.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 32
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 32
+# ** Error (suppressible): (vsim-3839) Variable '/udp_tb/in_full', driven via a port connection, is multiply driven. See ../sv/udp_tb.sv(35).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb File: ../sv/udp_tb.sv Line: 22
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:53:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:53:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:53:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:53:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:53:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:53:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:53:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:53:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:53:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:53:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): ../sv/parse_udp.sv(48): (vopt-2732) Module parameter 'FIFO_DATA_WIDTH' not found for override.
+# ** Error (suppressible): ../sv/parse_udp.sv(48): (vopt-2732) Module parameter 'FIFO_BUFFER_SIZE' not found for override.
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:54:37 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:54:37 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:54:37 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:54:37 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:54:37 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:54:37 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:54:37 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:54:37 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:54:37 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:54:37 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: ../sv/parse_udp.sv(11).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser File: ../sv/udp_top_level.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Error (suppressible): (vsim-3839) Variable '/udp_tb/in_full', driven via a port connection, is multiply driven. See ../sv/udp_tb.sv(35).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb File: ../sv/udp_tb.sv Line: 22
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:58:22 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:58:22 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:58:22 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 01:58:22 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:58:22 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 01:58:22 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:58:22 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 01:58:22 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 01:58:22 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 01:58:22 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: ../sv/parse_udp.sv(11).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser File: ../sv/udp_top_level.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Error (suppressible): (vsim-3839) Variable '/udp_tb/in_full', driven via a port connection, is multiply driven. See ../sv/udp_tb.sv(35).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb File: ../sv/udp_tb.sv Line: 22
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./udp_sim.do PAUSED at line 14
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:00:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:00:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:00:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:00:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:00:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:00:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:00:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:00:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:00:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:00:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 01:48:24 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: ../sv/parse_udp.sv(11).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser File: ../sv/udp_top_level.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:04:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:04:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:04:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:04:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:04:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:04:26 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:04:26 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:04:26 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:04:26 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:04:26 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:04:26 on Feb 24,2023, Elapsed time: 0:16:02
+# Errors: 17, Warnings: 29
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:04:26 on Feb 24,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'dout'. The port definition is at: ../sv/fifo_ctrl.sv(16).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo File: ../sv/udp_top_level.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: ../sv/parse_udp.sv(11).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser File: ../sv/udp_top_level.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:07:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:07:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:07:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:07:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:07:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:07:10 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:07:10 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:07:10 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:07:10 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:07:10 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:07:10 on Feb 24,2023, Elapsed time: 0:02:44
+# Errors: 10, Warnings: 5
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:07:10 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 29
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:10:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:10:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:10:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:10:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:10:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:10:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:10:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:10:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:10:02 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:10:02 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:10:03 on Feb 24,2023, Elapsed time: 0:02:53
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:10:03 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/input_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/parser/data_buffer/data_fifo File: ../sv/fifo_ctrl.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'din'. The port definition is at: ../sv/fifo.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /udp_tb/udp_inst/output_fifo/data_fifo File: ../sv/fifo_ctrl.sv Line: 33
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:14:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:14:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:14:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:14:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:14:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:14:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:14:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:14:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:14:25 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:14:25 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:14:25 on Feb 24,2023, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:14:25 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:15:20 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:15:20 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:15:20 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:15:20 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:15:20 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:15:20 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:15:20 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:15:20 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:15:20 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:15:21 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 02:15:21 on Feb 24,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:15:21 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:24:51 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:24:51 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:24:51 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:24:51 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:24:51 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:24:51 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:24:51 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:24:51 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:24:51 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:24:51 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:24:51 on Feb 24,2023, Elapsed time: 0:09:30
+# Errors: 1, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:24:51 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:26:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:26:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:26:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:26:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:26:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:26:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:26:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:26:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:26:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:26:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:26:24 on Feb 24,2023, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:26:24 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+add wave -position end  sim:/udp_tb/done
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:30:29 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:30:29 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:30:29 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:30:29 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:30:30 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:30:30 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:30:30 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:30:30 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:30:30 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:30:30 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:30:30 on Feb 24,2023, Elapsed time: 0:04:06
+# Errors: 5, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:30:30 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:35:41 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:35:41 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:35:41 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:35:41 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:35:41 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:35:41 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:35:41 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:35:41 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:35:41 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:35:41 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:35:41 on Feb 24,2023, Elapsed time: 0:05:11
+# Errors: 4, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:35:41 on Feb 24,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:38:04 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:38:04 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:38:04 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:38:04 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:38:04 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:38:04 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:38:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:38:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:38:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:38:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:38:05 on Feb 24,2023, Elapsed time: 0:02:24
+# Errors: 2, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:38:05 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:40:57 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:40:58 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:40:58 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:40:58 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:40:58 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: ../sv/parse_udp.sv(82): (vlog-2110) Illegal reference to net "in_rd_en".
+# End time: 02:40:58 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:45:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:45:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:45:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:45:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:45:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:45:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:45:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:45:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:45:05 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:45:05 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:45:06 on Feb 24,2023, Elapsed time: 0:07:01
+# Errors: 7, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:45:06 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:48:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:48:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:48:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:48:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:48:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:48:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:48:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:48:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:48:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:48:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:48:35 on Feb 24,2023, Elapsed time: 0:03:29
+# Errors: 10, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:48:35 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:49:48 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:49:48 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:49:48 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:49:48 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:49:48 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:49:48 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:49:48 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:49:48 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:49:48 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:49:48 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:49:49 on Feb 24,2023, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:49:49 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:57:00 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:57:00 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:57:00 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:57:00 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:57:00 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:57:00 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:57:00 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:57:00 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:57:00 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:57:00 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:57:01 on Feb 24,2023, Elapsed time: 0:07:12
+# Errors: 16, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:57:01 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:59:08 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 02:59:08 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:59:08 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 02:59:08 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:59:08 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 02:59:08 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:59:08 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 02:59:08 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 02:59:08 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 02:59:08 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:59:08 on Feb 24,2023, Elapsed time: 0:02:07
+# Errors: 6, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 02:59:08 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:03:59 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:03:59 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:03:59 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:03:59 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:03:59 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:03:59 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:03:59 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:03:59 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:03:59 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:03:59 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:03:59 on Feb 24,2023, Elapsed time: 0:04:51
+# Errors: 11, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:03:59 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:06:34 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:06:34 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:06:34 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:06:34 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:06:34 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:06:35 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:06:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:06:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:06:35 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:06:35 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:06:35 on Feb 24,2023, Elapsed time: 0:02:36
+# Errors: 5, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:06:35 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:08:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:08:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:08:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:08:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:08:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:08:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:08:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:08:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:08:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:08:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:08:24 on Feb 24,2023, Elapsed time: 0:01:49
+# Errors: 5, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:08:24 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:10:21 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:10:21 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:10:21 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:10:21 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:10:21 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: (vlog-13069) ../sv/parse_udp.sv(46): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 03:10:21 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:11:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:11:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:11:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:11:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:11:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:11:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:11:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:11:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:11:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:11:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:11:10 on Feb 24,2023, Elapsed time: 0:02:46
+# Errors: 6, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:11:10 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:28 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:16:28 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:28 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:16:29 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:29 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# ** Error: ../sv/parse_udp.sv(133): (vlog-2730) Undefined variable: 'in_wr_en'.
+# ** Error: ../sv/parse_udp.sv(144): (vlog-2730) Undefined variable: 'in_wr_en'.
+# End time: 03:16:29 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+# Error in macro ./udp_sim.do line 9
+# /vol/mentor/questa_sim-2019.3_2/questasim/linux/vlog failed.
+#     while executing
+# "vlog -work work "../sv/parse_udp.sv""
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:16:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:16:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:16:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:16:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:16:45 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:16:45 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:16:46 on Feb 24,2023, Elapsed time: 0:05:36
+# Errors: 16, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:16:46 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# @ 20985: ../data_out.txt(1024): ERROR 00 != 65 at address0x000003ff.
+# Packet size:        1066
+# @ 41915: ../data_out.txt(2048): ERROR 76 != 20 at address0x000007ff.
+# Packet size:         949
+# Packet size:           0
+# @ 62845: ../data_out.txt(3072): ERROR 35 != 65 at address0x00000bff.
+# @ 81435: ../data_out.txt(3979): ERROR 6e != 0a at address0x00000f8a.
+# @ 81445: Simulation completed.
+# Total simulation cycle count: 8141
+# Total error count: 4
+# ** Note: $finish    : ../sv/udp_tb.sv(86)
+#    Time: 81445 ns  Iteration: 2  Instance: /udp_tb
+# 1
+# Break in NamedBeginStat tb_process at ../sv/udp_tb.sv line 86
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:28:27 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:28:27 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:28:27 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:28:27 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:28:27 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:28:27 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:28:27 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:28:27 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:28:27 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:28:28 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 03:28:28 on Feb 24,2023, Elapsed time: 0:11:42
+# Errors: 31, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:28:28 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# @ 20985: ../data_out.txt(1024): ERROR 00 != 65 at address0x000003ff.
+# Packet size:        1066
+# @ 41915: ../data_out.txt(2048): ERROR 76 != 20 at address0x000007ff.
+# Packet size:         949
+# Packet size:           0
+# @ 62845: ../data_out.txt(3072): ERROR 35 != 65 at address0x00000bff.
+# @ 81435: ../data_out.txt(3979): ERROR 6e != 0a at address0x00000f8a.
+# @ 81445: Simulation completed.
+# Total simulation cycle count: 8141
+# Total error count: 4
+# ** Note: $finish    : ../sv/udp_tb.sv(86)
+#    Time: 81445 ns  Iteration: 2  Instance: /udp_tb
+# 1
+# Break in NamedBeginStat tb_process at ../sv/udp_tb.sv line 86
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:46:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:46:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:46:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:46:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:46:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:46:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:46:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:46:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:46:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:46:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:46:09 on Feb 24,2023, Elapsed time: 0:17:41
+# Errors: 58, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:46:09 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# @ 20985: ../data_out.txt(1024): ERROR 00 != 65 at address0x000003ff.
+# Packet size:        1066
+# @ 41915: ../data_out.txt(2048): ERROR 76 != 20 at address0x000007ff.
+# Packet size:         949
+# Packet size:           0
+# @ 62845: ../data_out.txt(3072): ERROR 35 != 65 at address0x00000bff.
+# @ 81435: ../data_out.txt(3979): ERROR 6e != 0a at address0x00000f8a.
+# @ 81445: Simulation completed.
+# Total simulation cycle count: 8141
+# Total error count: 4
+# ** Note: $finish    : ../sv/udp_tb.sv(86)
+#    Time: 81445 ns  Iteration: 2  Instance: /udp_tb
+# 1
+# Break in NamedBeginStat tb_process at ../sv/udp_tb.sv line 86
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:56:56 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:56:56 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:56:56 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:56:56 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:56:56 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:56:57 on Feb 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:56:57 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:56:57 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:56:57 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:56:57 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:56:57 on Feb 24,2023, Elapsed time: 0:10:48
+# Errors: 76, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:56:57 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+# A time value could not be extracted from the current line
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:57:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 03:57:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:57:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 03:57:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:57:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 03:57:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:57:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 03:57:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 03:57:24 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 03:57:24 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:57:25 on Feb 24,2023, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 03:57:25 on Feb 24,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:05:11 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 04:05:11 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:05:11 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 04:05:11 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:05:11 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 04:05:11 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:05:11 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 04:05:11 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:05:11 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 04:05:11 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:05:11 on Feb 24,2023, Elapsed time: 0:07:46
+# Errors: 41, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 04:05:11 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# Packet size:        1066
+# Packet size:         949
+# Packet size:           0
+do udp_sim.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.3_2 Lib Mapping Utility 2019.09 Sep 24 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:19:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 04:19:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:19:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/fifo_ctrl.sv 
+# -- Compiling module fifo_ctrl
+# 
+# Top level modules:
+# 	fifo_ctrl
+# End time: 04:19:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:19:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/parse_udp.sv 
+# -- Compiling module parse_udp
+# 
+# Top level modules:
+# 	parse_udp
+# End time: 04:19:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:19:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_top_level.sv 
+# -- Compiling module udp_top_level
+# 
+# Top level modules:
+# 	udp_top_level
+# End time: 04:19:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 2019.3_2 Compiler 2019.09 Sep 24 2019
+# Start time: 04:19:09 on Feb 24,2023
+# vlog -reportprogress 300 -work work ../sv/udp_tb.sv 
+# -- Compiling module udp_tb
+# 
+# Top level modules:
+# 	udp_tb
+# End time: 04:19:09 on Feb 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:19:09 on Feb 24,2023, Elapsed time: 0:13:58
+# Errors: 94, Warnings: 0
+# vsim -voptargs="+acc" "+notimingchecks" -L work work.udp_tb -wlf udp_tb.wlf 
+# Start time: 04:19:09 on Feb 24,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "parse_udp(fast)".
+# ** Warning: License feature 'msimhdlsim' will expire in 4 days.
+# Loading sv_std.std
+# Loading work.udp_tb(fast)
+# Loading work.udp_top_level(fast)
+# Loading work.fifo_ctrl(fast)
+# Loading work.fifo(fast)
+# Loading work.fifo(fast__1)
+# Loading work.parse_udp(fast)
+# @ 20: Loading file ../test.pcap...
+# Packet size:        1066
+# @ 25: Comparing file ../data_out.txt...
+# n_bytes =        3979
+# 
+# @ 30: Beginning simulation...
+# Packet size:        1066
+# @ 20985: ../data_out.txt(1024): ERROR 00 != 65 at address0x000003ff.
+# Packet size:        1066
+# @ 41915: ../data_out.txt(2048): ERROR 76 != 20 at address0x000007ff.
+# Packet size:         949
+# Packet size:           0
+# @ 62845: ../data_out.txt(3072): ERROR 35 != 65 at address0x00000bff.
+# @ 81435: ../data_out.txt(3979): ERROR 6e != 0a at address0x00000f8a.
+# @ 81445: Simulation completed.
+# Total simulation cycle count: 8141
+# Total error count: 4
+# ** Note: $finish    : ../sv/udp_tb.sv(86)
+#    Time: 81445 ns  Iteration: 2  Instance: /udp_tb
+# 1
+# Break in NamedBeginStat tb_process at ../sv/udp_tb.sv line 86
