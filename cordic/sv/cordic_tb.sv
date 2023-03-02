@@ -136,7 +136,7 @@ initial begin : cos_write_process
 
             if (cmp_dout != cos_dout) begin
                 out_errors += 1;
-                // $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, COS_OUT_NAME, i+1, cos_dout, cmp_dout, i);
+                $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, COS_OUT_NAME, i+1, cos_dout, cmp_dout, i);
             end
             out_rd_en = 1'b1;
             i++;
@@ -175,7 +175,7 @@ initial begin : sin_write_process
 
             if (cmp_dout != sin_dout) begin
                 out_errors += 1;
-                // $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, SIN_OUT_NAME, i+1, sin_dout, cmp_dout, i);
+                $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, SIN_OUT_NAME, i+1, sin_dout, cmp_dout, i);
             end
             out_rd_en = 1'b1;
             i++;

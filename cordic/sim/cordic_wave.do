@@ -17,3 +17,6 @@ add wave -noupdate -group cordic_tb/cordic_top_inst/cos_fifo -radix hexadecimal 
 
 add wave -noupdate -group cordic_tb/cordic_top_inst/sin_fifo
 add wave -noupdate -group cordic_tb/cordic_top_inst/sin_fifo -radix hexadecimal /cordic_tb/cordic_top_inst/sin_fifo/*
+
+#add wave -noupdate -group cordic_tb/cordic_top_inst/cordic_inst/genblk1[0]
+#add wave -noupdate -group cordic_tb/cordic_top_inst/cordic_inst/genblk1[0] -radix hexadecimal /cordic_tb/cordic_top_inst/cordic_inst/genblk1[0]/*

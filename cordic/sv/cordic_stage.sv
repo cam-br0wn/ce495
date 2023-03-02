@@ -18,7 +18,7 @@ module cordic_stage
 
 logic           valid_q;
 logic   [15:0]  d, x_q, y_q, z_q;
-assign d = (z_in >= 0) ? 16'h0000 : 16'hffff;
+assign d = ($signed(z_in) >= 0) ? 16'h0000 : 16'hffff;
 assign x_out = x_q;
 assign y_out = y_q;
 assign z_out = z_q;
@@ -32,9 +32,9 @@ always_ff @( posedge clk or posedge reset ) begin : stage
         valid_q <= '0;
     end
     else begin
-        x_q <= x_in - (((y_in >> k_in) ^ d) - d);
-        y_q <= y_in - (((x_in >> k_in) ^ d) - d);
-        z_q <= z_in - ((c_in ^ d) - d);
+        x_q <= $signed(x_in) - $signed(((y_in >>> k_in) ^ d) - $signed(d));
+        y_q <= $signed(y_in) - $signed(((x_in >>> k_in) ^ d) - $signed(d));
+        z_q <= $signed(z_in) - $signed(((c_in ^ d) - $signed(d));
         valid_q <= valid_in;
     end
 end
