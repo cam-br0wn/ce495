@@ -20,12 +20,13 @@ logic   [31:0]      in_din;
 logic               in_full;
 
 logic               out_rd_en;
-logic   [31:0]      cos_dout;
-logic   [31:0]      sin_dout;
+logic   [15:0]      cos_dout;
+logic   [15:0]      sin_dout;
 logic               out_empty;
 
 logic               in_write_done = '0;
-logic               out_read_done = '0;
+logic               sin_out_read_done = '0;
+logic               cos_out_read_done = '0;
 integer             out_errors = '0;
 
 cordic_top_level cordic_top_inst (
@@ -38,8 +39,8 @@ cordic_top_level cordic_top_inst (
 
     .out_empty(out_empty),
     .out_rd_en(out_rd_en),
-    .cos_out(cos_dout),
-    .sin_out(sin_dout)
+    .cos_dout(cos_dout),
+    .sin_dout(sin_dout)
 );
 
 always begin
@@ -69,7 +70,7 @@ initial begin : tb_process
     @(posedge clk);
     start = 1'b0;
 
-    wait(out_read_done);
+    wait(cos_out_read_done && sin_out_read_done && in_write_done);
     end_time = $time;
 
     // report metrics
@@ -83,23 +84,25 @@ end
 
 initial begin : theta_read_process
 
-    int i, in_file;
+    int i, in_file, count;
 
     @(negedge reset);
     $display("@ %0t: Loading file %s...", $time, THETA_IN_NAME);
 
-    in_file = $fopen(THETA_IN_NAME, "rb");
+    in_file = $fopen(THETA_IN_NAME, "r");
     in_wr_en = 1'b0;
+    i = 0;
 
     // Read data from input angles text file
-    while ( !$feof(in_file) ) begin
+    while ( i < 721 ) begin
         @(negedge clk);
         if (in_full == 1'b0) begin
-            $fscanf(in_file, "%x", in_din);
+            count = $fscanf(in_file,"%08h",in_din);
             in_wr_en = 1'b1;
         end else begin
             in_wr_en = 1'b0;
         end
+        i++;
     end
 
     @(negedge clk);
@@ -109,7 +112,7 @@ initial begin : theta_read_process
 end
 
 initial begin : cos_write_process
-    int i, n_bytes, r;
+    int i, r, count;
     int out_file;
     int cmp_file;
     logic [15:0] cmp_dout;
@@ -119,25 +122,21 @@ initial begin : cos_write_process
 
     $display("@ %0t: Comparing file %s...", $time, COS_OUT_NAME);
 
-    out_file = $fopen(COS_OUT_NAME, "wb");
-    cmp_file = $fopen(COS_CMP_NAME, "rb");
+    out_file = $fopen(COS_OUT_NAME, "w");
+    cmp_file = $fopen(COS_CMP_NAME, "r");
     out_rd_en = 1'b0;
+    i = 0;
 
-    i = $fseek(cmp_file, 0, 2);
-    n_bytes = $ftell(cmp_file);
-    i = $fseek(cmp_file, 0, 0);
-    $display("n_bytes = %d\n", n_bytes);
-
-    while (!$feof(cmp_file)) begin
+    while (i < 721) begin
         @(negedge clk);
         out_rd_en = 1'b0;
         if (out_empty == 1'b0) begin
-            r = $fread(cmp_dout, cmp_file, i, 1);
-            $fwrite(out_file, "%x", cos_dout);
+            count = $fscanf(cmp_file, "%04h", cmp_dout);
+            $fwrite(out_file, "%04h\n", cos_dout);
 
             if (cmp_dout != cos_dout) begin
                 out_errors += 1;
-                $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, COS_OUT_NAME, i+1, cos_dout, cmp_dout, i);
+                // $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, COS_OUT_NAME, i+1, cos_dout, cmp_dout, i);
             end
             out_rd_en = 1'b1;
             i++;
@@ -148,11 +147,11 @@ initial begin : cos_write_process
     out_rd_en = 1'b0;
     $fclose(out_file);
     $fclose(cmp_file);
-    out_read_done = 1'b1;
+    cos_out_read_done = 1'b1;
 end
 
 initial begin : sin_write_process
-    int i, n_bytes, r;
+    int i, r, count;
     int out_file;
     int cmp_file;
     logic [15:0] cmp_dout;
@@ -162,25 +161,21 @@ initial begin : sin_write_process
 
     $display("@ %0t: Comparing file %s...", $time, SIN_OUT_NAME);
 
-    out_file = $fopen(SIN_OUT_NAME, "wb");
-    cmp_file = $fopen(SIN_CMP_NAME, "rb");
+    out_file = $fopen(SIN_OUT_NAME, "w");
+    cmp_file = $fopen(SIN_CMP_NAME, "r");
     out_rd_en = 1'b0;
+    i = 0;
 
-    i = $fseek(cmp_file, 0, 2);
-    n_bytes = $ftell(cmp_file);
-    i = $fseek(cmp_file, 0, 0);
-    $display("n_bytes = %d\n", n_bytes);
-
-    while (!$feof(cmp_file)) begin
+    while (i < 721) begin
         @(negedge clk);
         out_rd_en = 1'b0;
         if (out_empty == 1'b0) begin
-            r = $fread(cmp_dout, cmp_file, i, 1);
-            $fwrite(out_file, "%x", sin_dout);
+            count = $fscanf(cmp_file, "%04h", cmp_dout);
+            $fwrite(out_file, "%04h\n", sin_dout);
 
             if (cmp_dout != sin_dout) begin
                 out_errors += 1;
-                $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, SIN_OUT_NAME, i+1, sin_dout, cmp_dout, i);
+                // $write("@ %0t: %s(%0d): ERROR %x != %x at address0x%x.\n", $time, SIN_OUT_NAME, i+1, sin_dout, cmp_dout, i);
             end
             out_rd_en = 1'b1;
             i++;
@@ -191,7 +186,7 @@ initial begin : sin_write_process
     out_rd_en = 1'b0;
     $fclose(out_file);
     $fclose(cmp_file);
-    out_read_done = 1'b1;
+    sin_out_read_done = 1'b1;
 end
 
 endmodule
