@@ -82,10 +82,11 @@ void cordic(int rad, short *s, short *c)
     }
 
     short z = r;
-
+    printf("x[0]: %04x\ty[0]: %04x\tz[0]: %04x\n", x, y, z);
     for ( int k = 0; k < CORDIC_NTAB; k++ )
     {
         cordic_stage(k, CORDIC_TABLE[k], &x, &y, &z);
+        printf("x[%d]: %04x\ty[%d]: %04x\tz[%d]: %04x\n", k+1, x, k+1, y, k+1, z);
     }  
     
     *c = x; 
@@ -135,7 +136,7 @@ int main(int argc, char **argv)
 
     printf("theta\trads\tsin\tc_sin\tsin_err\tcos\tc_cos\tcos_err\n");
 
-    for ( int i = -360; i <= 360; i++ )
+    for ( int i = -360; i <= -360; i++ )
     {
         float p = i * M_PI / 180;        
         int p_fixed = QUANTIZE_F(p);

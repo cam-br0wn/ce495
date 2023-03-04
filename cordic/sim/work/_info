@@ -10,51 +10,50 @@ z2
 cModel Technology
 Z0 d/home/ckb4640/ce_495/cordic/sim
 T_opt
-!s110 1677745559
-VRX3Q;bR2Jn@XT@3GPknoJ3
+!s110 1677906549
+Vb[ReZVO:[DhUc?;EaEH_U3
 04 9 4 work cordic_tb fast 0
-=3-000ae431a4f1-64005d96-dbad7-1757d
+=1-000ae431a4f1-6402d275-27330-8bb8d
 o-quiet -auto_acc_if_foreign -work work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OE;O;2019.3_2;69
-R0
 vcordic
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1677745894
+Z3 !s110 1677906548
 !i10b 1
-!s100 =5Z=ZC1WPTRj2JZCnMCkI0
-!s11b GIVBlOR[Wj>9oQ6gbnz`<2
-I:T9HFhnD:k>aNEbQbGEYG1
+!s100 8n3IQbPIS]ZbF@RCHPco@2
+!s11b JiioK^HN4lO5La;<>l0J03
+Iedf9jzdl7R5217N4X<eU73
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1677745173
-8/home/ckb4640/ce_495/cordic/sv/cordic.sv
-F/home/ckb4640/ce_495/cordic/sv/cordic.sv
+w1677906524
+8../sv/cordic.sv
+F../sv/cordic.sv
 !i122 -1
 L0 3
 Z5 OE;L;2019.3_2;69
 r1
 !s85 0
 31
-Z6 !s108 1677745894.000000
-!s107 /home/ckb4640/ce_495/cordic/sv/cordic.sv|
-!s90 -reportprogress|300|-work|work|/home/ckb4640/ce_495/cordic/sv/cordic.sv|
+Z6 !s108 1677906548.000000
+!s107 ../sv/cordic.sv|
+!s90 -reportprogress|300|-work|work|../sv/cordic.sv|
 !i113 0
 Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vcordic_stage
 R2
-!s110 1677745265
+R3
 !i10b 1
-!s100 GFe5mz@5K2JZRFnWgDo_=3
-!s11b XaWcE@i?zG=TK^5b[2z6B2
-I;=jVfODD`ioX<[hiBi>Q72
+!s100 ?;A3WFBB<6nB]oAN?4[P;0
+!s11b KI@lB13lkbdM;Hca`R6k>0
+Icn3aho<<agI39d4^Zd_i53
 R4
 S1
 R0
-w1677740519
+w1677905835
 8../sv/cordic_stage.sv
 F../sv/cordic_stage.sv
 !i122 -1
@@ -63,7 +62,7 @@ R5
 r1
 !s85 0
 31
-!s108 1677745265.000000
+R6
 !s107 ../sv/cordic_stage.sv|
 !s90 -reportprogress|300|-work|work|../sv/cordic_stage.sv|
 !i113 0
@@ -75,13 +74,13 @@ R3
 !i10b 1
 !s100 8A?i7Y9QWOV5Rbn=A^z8c1
 !s11b c`lRLPU>hTBiJFX?T<:Hk2
-IoUX7DchPbJa`9T<zB`]AE3
+IVe5:j<n2z4Ba2mH?fZM3V0
 R4
 S1
 R0
 w1677745237
-8/home/ckb4640/ce_495/cordic/sv/cordic_tb.sv
-F/home/ckb4640/ce_495/cordic/sv/cordic_tb.sv
+8../sv/cordic_tb.sv
+F../sv/cordic_tb.sv
 !i122 -1
 L0 4
 R5
@@ -89,8 +88,8 @@ r1
 !s85 0
 31
 R6
-!s107 /home/ckb4640/ce_495/cordic/sv/cordic_tb.sv|
-!s90 -reportprogress|300|-work|work|/home/ckb4640/ce_495/cordic/sv/cordic_tb.sv|
+!s107 ../sv/cordic_tb.sv|
+!s90 -reportprogress|300|-work|work|../sv/cordic_tb.sv|
 !i113 0
 R7
 R1
@@ -100,13 +99,13 @@ R3
 !i10b 1
 !s100 K4JSn6UnUlQ1niQF>3O1[3
 !s11b k4nWK8zfe7[ABiVEMUc_W3
-I_ReJNNCQHWh>6k2<1AVn`2
+IXRz5M4FfRYbOUA@0QfciP3
 R4
 S1
 R0
 w1677739895
-8/home/ckb4640/ce_495/cordic/sv/cordic_top_level.sv
-F/home/ckb4640/ce_495/cordic/sv/cordic_top_level.sv
+8../sv/cordic_top_level.sv
+F../sv/cordic_top_level.sv
 !i122 -1
 L0 1
 R5
@@ -114,8 +113,8 @@ r1
 !s85 0
 31
 R6
-!s107 /home/ckb4640/ce_495/cordic/sv/cordic_top_level.sv|
-!s90 -reportprogress|300|-work|work|/home/ckb4640/ce_495/cordic/sv/cordic_top_level.sv|
+!s107 ../sv/cordic_top_level.sv|
+!s90 -reportprogress|300|-work|work|../sv/cordic_top_level.sv|
 !i113 0
 R7
 R1
@@ -125,13 +124,13 @@ R3
 !i10b 1
 !s100 ORc6Afz=9k;2g:1hC0HLH0
 !s11b 8[=C@541hFiIBGPTlWW]81
-Izo2<m=z=miAVjcY36PL:@3
+IZ50SHRlH<YzjTTXNcH>971
 R4
 S1
 R0
 w1677650238
-8/home/ckb4640/ce_495/cordic/sv/fifo.sv
-F/home/ckb4640/ce_495/cordic/sv/fifo.sv
+8../sv/fifo.sv
+F../sv/fifo.sv
 !i122 -1
 L0 2
 R5
@@ -139,8 +138,8 @@ r1
 !s85 0
 31
 R6
-!s107 /home/ckb4640/ce_495/cordic/sv/fifo.sv|
-!s90 -reportprogress|300|-work|work|/home/ckb4640/ce_495/cordic/sv/fifo.sv|
+!s107 ../sv/fifo.sv|
+!s90 -reportprogress|300|-work|work|../sv/fifo.sv|
 !i113 0
 R7
 R1

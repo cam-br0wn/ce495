@@ -32,9 +32,9 @@ always_ff @( posedge clk or posedge reset ) begin : stage
         valid_q <= '0;
     end
     else begin
-        x_q <= $signed(x_in) - $signed(((y_in >>> k_in) ^ d) - $signed(d));
-        y_q <= $signed(y_in) - $signed(((x_in >>> k_in) ^ d) - $signed(d));
-        z_q <= $signed(z_in) - $signed(((c_in ^ d) - $signed(d));
+        x_q <= $signed(x_in) - $signed(($signed(y_in) >>> k_in) ^ d) - $signed(d);
+        y_q <= $signed(y_in) - $signed(($signed(x_in) >>> k_in) ^ d) - $signed(d);
+        z_q <= $signed(z_in) - $signed(c_in ^ d) - $signed(d);
         valid_q <= valid_in;
     end
 end

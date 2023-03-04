@@ -13,13 +13,13 @@ module cordic
 
 // cordic lookup table
 localparam logic[0:15][15:0] CORDIC_TABLE = '{16'h3243, 16'h1DAC, 16'h0FAD, 16'h07F5, 
-                                        16'h03FE, 16'h01FF, 16'h00FF, 16'h007F, 
-                                        16'h003F, 16'h001F, 16'h000F, 16'h0007, 
-                                        16'h0003, 16'h0001, 16'h0000, 16'h0000};
+                                              16'h03FE, 16'h01FF, 16'h00FF, 16'h007F, 
+                                              16'h003F, 16'h001F, 16'h000F, 16'h0007, 
+                                              16'h0003, 16'h0001, 16'h0000, 16'h0000};
 typedef logic[15:0]     short_t;
 logic   [31:0]          r_bound_1, r_bound_2, int_x;
 logic   [16:0][15:0]    x_stage, y_stage, z_stage;
-logic   [16:0]          valid_stage;
+logic   [16:0][0:0]     valid_stage;
 
 always_comb begin
     y_stage[0] = '0;
