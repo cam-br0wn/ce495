@@ -26,21 +26,21 @@ always_comb begin
     valid_stage[0] = valid_in;
 
     // first bounds check
-    if ($signed(theta_in) > 32'h0000c90f) begin
-        r_bound_1 = $signed(theta_in) - 32'h0001921f;
+    if ($signed(theta_in) > $signed(32'h0000c90f)) begin
+        r_bound_1 = $signed(theta_in) - $signed(32'h0001921f);
     end else if ($signed(theta_in) < $signed(32'hffff36f1)) begin
-        r_bound_1 = $signed(theta_in) + 32'h0001921f;
+        r_bound_1 = $signed(theta_in) + $signed(32'h0001921f);
     end else begin
         r_bound_1 = theta_in;
     end
 
     // second bounds check
-    if ($signed(r_bound_1) > 32'h00006487) begin
-        r_bound_2 = $signed(r_bound_1) - 32'h0000c90f;
+    if ($signed(r_bound_1) > $signed(32'h00006487)) begin
+        r_bound_2 = $signed(r_bound_1) - $signed(32'h0000c90f);
         int_x = $signed(32'hffffd923);
     end 
     else if ($signed(r_bound_1) < $signed(32'hffff9b79)) begin
-        r_bound_2 = $signed(r_bound_1) + 32'h0000c90f;
+        r_bound_2 = $signed(r_bound_1) + $signed(32'h0000c90f);
         int_x = $signed(32'hffffd923);
     end
     else begin

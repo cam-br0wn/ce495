@@ -10,25 +10,25 @@ z2
 cModel Technology
 Z0 d/home/ckb4640/ce_495/cordic/sim
 T_opt
-!s110 1677906549
-Vb[ReZVO:[DhUc?;EaEH_U3
+!s110 1677913505
+Vm:H`oz:OEaEUB@IGSnNRd2
 04 9 4 work cordic_tb fast 0
-=1-000ae431a4f1-6402d275-27330-8bb8d
+=1-000ae431a4f1-6402eda0-ddb9d-8e6ad
 o-quiet -auto_acc_if_foreign -work work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OE;O;2019.3_2;69
 vcordic
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1677906548
+Z3 !s110 1677913504
 !i10b 1
-!s100 8n3IQbPIS]ZbF@RCHPco@2
-!s11b JiioK^HN4lO5La;<>l0J03
-Iedf9jzdl7R5217N4X<eU73
+!s100 9OOg<`?>OlJR?ijZRJ51K3
+!s11b e0>J<<XF;3XF>>FoEK3492
+Ie43MlZhkiD]P@S3iX2LGL3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1677906524
+w1677911198
 8../sv/cordic.sv
 F../sv/cordic.sv
 !i122 -1
@@ -37,7 +37,7 @@ Z5 OE;L;2019.3_2;69
 r1
 !s85 0
 31
-Z6 !s108 1677906548.000000
+Z6 !s108 1677913504.000000
 !s107 ../sv/cordic.sv|
 !s90 -reportprogress|300|-work|work|../sv/cordic.sv|
 !i113 0
@@ -47,13 +47,13 @@ vcordic_stage
 R2
 R3
 !i10b 1
-!s100 ?;A3WFBB<6nB]oAN?4[P;0
-!s11b KI@lB13lkbdM;Hca`R6k>0
-Icn3aho<<agI39d4^Zd_i53
+!s100 4B[<`R=;LMFLj2RY1@HV`0
+!s11b R>iY=l0kSECJzNZQHTNh71
+ITHcKJF<_D4@e>T8l_Sik:2
 R4
 S1
 R0
-w1677905835
+w1677913495
 8../sv/cordic_stage.sv
 F../sv/cordic_stage.sv
 !i122 -1
